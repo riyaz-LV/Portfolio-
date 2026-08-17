@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern personal portfolio showcasing projects, skills, experience, and contact details." />
+  <title>Portfolio | Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="Portfolio home">A<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-content">
+        <p class="eyebrow">Available for freelance work</p>
+        <h1>Building polished digital products with thoughtful design and clean code.</h1>
+        <p class="hero-copy">Hi, I’m Alex Morgan — a frontend developer crafting fast, accessible websites and delightful interfaces for ambitious teams.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="#contact">Let's talk</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Profile highlights">
+        <div class="avatar" aria-hidden="true">AM</div>
+        <h2>Frontend Developer</h2>
+        <p>React • Design Systems • Accessibility</p>
+        <div class="stats">
+          <span><strong>6+</strong> Years</span>
+          <span><strong>42</strong> Projects</span>
+          <span><strong>12</strong> Awards</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-shell intro-grid" aria-label="Portfolio overview">
+      <article>
+        <span class="section-label">What I do</span>
+        <h2>From concept to launch, I help brands move faster.</h2>
+      </article>
+      <p>I combine product strategy, accessible interface design, and modern engineering practices to ship experiences that look great and perform beautifully across devices.</p>
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="section-heading">
+        <span class="section-label">Featured work</span>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-meta"><span>Fintech</span><span>2026</span></div>
+          <h3>NovaPay Dashboard</h3>
+          <p>A responsive analytics workspace that helps finance teams monitor payments, disputes, and cash flow in real time.</p>
+          <a href="#contact" aria-label="Discuss a project like NovaPay Dashboard">Discuss similar work →</a>
+        </article>
+        <article class="project-card featured">
+          <div class="project-meta"><span>SaaS</span><span>2025</span></div>
+          <h3>Orbit Design System</h3>
+          <p>A component library and documentation site that reduced design-to-development handoff time by 38%.</p>
+          <a href="#contact" aria-label="Discuss a project like Orbit Design System">Discuss similar work →</a>
+        </article>
+        <article class="project-card">
+          <div class="project-meta"><span>Commerce</span><span>2025</span></div>
+          <h3>Luma Storefront</h3>
+          <p>A conversion-focused storefront with immersive product storytelling and performance-first architecture.</p>
+          <a href="#contact" aria-label="Discuss a project like Luma Storefront">Discuss similar work →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell split-section" id="skills">
+      <div>
+        <span class="section-label">Capabilities</span>
+        <h2>Skills that turn ideas into durable products.</h2>
+      </div>
+      <div class="skill-list">
+        <span>React</span><span>TypeScript</span><span>CSS Architecture</span><span>Web Performance</span><span>Accessibility</span><span>UX Prototyping</span><span>Design Systems</span><span>API Integration</span>
+      </div>
+    </section>
+
+    <section class="section-shell" id="experience">
+      <div class="section-heading">
+        <span class="section-label">Experience</span>
+        <h2>Recent roles</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>2023 — Present</span>
+          <h3>Senior Frontend Engineer, PixelForge</h3>
+          <p>Leading web platform initiatives for high-growth SaaS clients with a focus on accessibility and speed.</p>
+        </article>
+        <article>
+          <span>2020 — 2023</span>
+          <h3>Product Designer & Developer, Studio North</h3>
+          <p>Designed and built marketing sites, dashboards, and design systems for startups and nonprofits.</p>
+        </article>
+        <article>
+          <span>2018 — 2020</span>
+          <h3>UI Developer, BrightApps</h3>
+          <p>Implemented responsive product interfaces and collaborated with designers on reusable component patterns.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell contact" id="contact">
+      <span class="section-label">Contact</span>
+      <h2>Have a project in mind?</h2>
+      <p>Send a note and I’ll reply with next steps, timelines, and a few ideas to get things moving.</p>
+      <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alex Morgan. Built with care.</p>
+    <div>
+      <a href="https://github.com/" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
